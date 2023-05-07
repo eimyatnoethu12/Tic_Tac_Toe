@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+	<meta charset="utf-8">
+	<!--css-->
+	<link href="reset.css" rel="stylesheet"/>
+	<link href="styles.css" rel="stylesheet"/>
+	<!--google fonts-->
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet"> 
+	<!--javascript-->
+	<script defer src="main.js"></script>
+</head>
+<body>
+	<div id="paper">
+		<h1>Tic Tac Toe</h1>
+		<div id="new-game-btn" class="btn">New Game</div>
+		<p id="player-turn"></p>
+		<main id="game-board"></main>
+		<div id="winner" class="hide"></div>
+	</div>
+	<div id="modal" class="show">
+		<div id="modal-container">
+			<h1>Tic Tac Toe</h1>
+			<form id="modal-form">
+				<fieldset id="game-type">
+					<input id="one-player" type="radio" name="players" disabled />
+					<label for="one-player" style="color: #AAA">One Player</label>
+					<input id="two-player" type="radio" name="players" checked />
+					<label for="two-player">Two Player</label>
+				</fieldset>
+				<fieldset id="player1-details">
+					<input id="player1-name" type="text" placeholder="Player 1 Name" />
+					<input id="player1-marker" type="text" maxlength="1" placeholder="Player 1 Marker" />
+				</fieldset>
+				<fieldset id="player2-details">
+					<input id="player2-name" type="text" placeholder="Player 2 Name" />
+					<input id="player2-marker" type="text" maxlength="1" placeholder="Player 2 Marker" />
+				</fieldset>
+				<div id="play-game-btn" class="btn">Play Game!</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
